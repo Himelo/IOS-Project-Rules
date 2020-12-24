@@ -26,8 +26,8 @@
  > 함수 이름은 아직 정하진 않았지만, 너무 자기 맘대로 하지는 않았음 좋겠습니다. 자료 조사좀 더 하고 자세한 규칙 정해봅시다.
  > > ex) 로그인 버튼을 터치했을 때 실행하는 함수
  ```swift
-   func onPress_UserLogin(...)  // x
-   func handleLoginButtonPress(...) // 0
+   func onPress_UserLogin(){...}  // x
+   func handleLoginButtonPress(){...} // 0
  ```
 
 > 상수/변수 이름은 Camel case rule에 따라 잘 작성해주십쇼.
@@ -72,7 +72,7 @@
 ```
 > swift에서는, 프로그래머의 귀찮은 타입 명시를 그나마 편안하게 하기 위해서 다음과 같이 _ 문자를 통해
 > 타입 입력을 제한할 수 있는데 우리는 하지 맙시다.
-```swiftd
+```swift
 func printHelloTo(_ name: String) {
     print("Hello " + name + "🥕");
 }
