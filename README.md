@@ -1,4 +1,7 @@
-![himelo](https://user-images.githubusercontent.com/59948675/102993991-89bde580-4561-11eb-9040-2f9f61be613d.png)
+<p align="center" width="100%">
+  <img src="https://user-images.githubusercontent.com/59948675/102993991-89bde580-4561-11eb-9040-2f9f61be613d.png"></img>
+</p>
+
 > 프로젝트 진행이 힘들다 생각하시면, 당근을 넣어 주세요 🥕 
 ## IOS 프로젝트 진행을 위한 Himelo Rules
 
