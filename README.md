@@ -58,10 +58,11 @@
 
 ## Types
 선언한 상수/변수에 대하여 해당 타입을 정확히 명시해 주세요.
-함수에도 마찬가지에요. 파라미터와 인자에도 정확한 타입을 명시해주세요.
+함수나 배열에도 마찬가지에요. 파라미터와 인자에도 정확한 타입을 명시해주세요.
 ```swift
  let numberOfCarrot : Int = 5;
  var currentState : String = "logged";
+ let array : [Int] = [1,2,3,4,5];
  func handleUserActionOnPress(state : String) { ... };
  
  // 간단하게 인자를 명시할 때도 마찬가지로요
