@@ -11,12 +11,12 @@
 
 ###### Sections  
 
-+ Naming Rule
-  + Constants
-  + Variables
-+ Types
-+ Parameters and Results
-  + Function
+- [Naming Rule](#naming-rule)
+  - Constants
+  - Variables
+- [Types](#types)
+- Parameters and Results
+  - Function
  
  
  ## Naming Rule
