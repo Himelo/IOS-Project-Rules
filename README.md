@@ -56,10 +56,17 @@
 > Class와 Struct는 대문자로 시작해서 선언합시다.
 ```swift
   // Struct
-  struct Song{
-    let title: String
-    let artist: String
-    let duration: Int
+  struct Rectangle {
+    let width: Int
+    let height: Int
+    
+    var area: Int {
+        return width * height
+    }
+    
+    func isBiggerThan(_ rectangle: Rectangle) -> Bool {
+        return area > rectangle.area
+    }
   }
 ```
 ---------------
