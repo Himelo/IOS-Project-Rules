@@ -79,5 +79,7 @@ func printHelloTo(_ name: String) {
 }
 ```
 
+> 개발을할 때, 안정적인 프로그램을 만들고자 변수보다는 ***상수***를, Class보다는 ***Struct***을 써주세요.
+
 
 
