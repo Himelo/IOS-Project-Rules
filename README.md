@@ -53,7 +53,7 @@
   // Variable
   var numberOfCarrot = "10";
 ```
-> Class와 Struct는 대문자로 시작해서 선언합시다.
+> Class, Struct와 enum은 대문자로 시작해서 선언합시다.
 ```swift
   // Struct
   struct Rectangle {
@@ -66,6 +66,21 @@
     
     func isBiggerThan(_ rectangle: Rectangle) -> Bool {
         return area > rectangle.area
+    }
+  }
+  
+  // Enum
+  // enum은 복수형은 사용하지 않습니다.
+  enum FoodChoice{
+    case apple, orange, banana
+    
+    switch self{
+    case .apple
+      return "🍎"
+    case .orange
+      return "🍊"
+    case .banana
+      return "🍌"
     }
   }
 ```
