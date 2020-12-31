@@ -11,6 +11,7 @@
 
 ###### Sections  
 
+- [Caution](#caution)
 - [Naming Rule](#naming-rule)
   - Constants
   - Variables
@@ -18,6 +19,8 @@
 - Parameters and Results
   - Function
  
+ ## Caution
+ ***스토리보드 파일 절대 공동 작업 금지***
  
  ## Naming Rule
  상수와 변수를 구분하여 선언해 주세요.
