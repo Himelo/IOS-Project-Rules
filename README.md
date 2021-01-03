@@ -143,4 +143,16 @@ func printHelloTo(_ name: String) {
   }
 ```
 
-
+> Struct 내부의 property 값을 바꾸는 method는 mutating을 사용해야합니다.
+```swift
+  struct Odometer {
+    var count: Int = 0
+    
+    mutating func increment() {
+      count += 1
+    }
+  }
+  
+  var odometer = Odometer()
+  odometer.increment()
+```
