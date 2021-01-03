@@ -16,8 +16,9 @@
   - Constants
   - Variables
 - [Types](#types)
-- Parameters and Results
+- [Parameters and Results](#parameters-and-results)
   - Function
+  - [Struct](#struct)
  
  ## Caution
  ***스토리보드 파일 절대 공동 작업 금지***
@@ -118,5 +119,28 @@ func printHelloTo(_ name: String) {
 
 > 개발할때, 안정적인 프로그램을 만들고자 변수보다는 ***상수***를, Class보다는 ***Struct***을 써주세요.
 
+## Parameters and Results
+
+### Struct
+
+> Struct의 custom initalizer 사용법
+```swift
+  struct Rectangle {
+    let width: Int
+    let height: Int
+    
+    var area: Int {
+        return width * height
+    }
+    
+    init(myWidth: Int, myHeight: Int){
+      area = myWidth * myHeight + 10
+    }
+    
+    func isBiggerThan(_ rectangle: Rectangle) -> Bool {
+        return area > rectangle.area
+    }
+  }
+```
 
 
