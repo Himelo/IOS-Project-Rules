@@ -159,7 +159,7 @@ func printHelloTo(_ name: String) {
 ```
 
 ## Coding Style
-강의에 나온것 같이(App Dev 19강) Outlet은 `viewDidLoad()`위에 Action은 아래에 작성합시다.
+강의에 나온것 같이(App Dev 19강) **Outlet**은 `viewDidLoad()`위에 **Action**은 아래에 작성합시다.
 ```swift
   class ViewController: UIViewController {
     @IBOutlet weak var toggle: UISwitch!
