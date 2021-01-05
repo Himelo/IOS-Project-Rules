@@ -19,6 +19,7 @@
 - [Parameters and Results](#parameters-and-results)
   - Function
   - [Struct](#struct)
+- [Coding Style](#coding-style)
  
  ## Caution
  ***스토리보드 파일 절대 공동 작업 금지***
@@ -155,4 +156,28 @@ func printHelloTo(_ name: String) {
   
   var odometer = Odometer()
   odometer.increment()
+```
+
+## Coding Stlye
+강의에 나온것 같이(App Dev 19강) Outlet은 `viewDidLoad()`위에 Action은 아래에 작성합시다.
+```swift
+  class ViewController: UIViewController {
+    @IBOutlet weak var toggle: UISwitch!
+    @IBOutlet weak var slider: UISlider!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
+    @IBAction func buttonTapped(_ sender: Any) {
+        print("Button was tapped!")
+        
+        if toggle.isOn{
+            print("The switch is on!")
+        } else {
+            print("The switch is off!")
+        }
+    }
+  }
 ```
