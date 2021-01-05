@@ -181,3 +181,28 @@ func printHelloTo(_ name: String) {
     }
   }
 ```
+
+## Singleton Pattern
+객체를 하나만 생성하여, 생성된 객체를 어디서든 참조할 수 있도록 하는 패턴입니다.
+> 생성    
+> static 변수에 Singleton Pattern을 적용할 클래스의 인스턴스를 할당
+> initializer를 private으로 설정하여 다른 곳에서 또 인스턴스를 생성하지 못하도록 해야한다. (Thread-safe)
+
+``` swift
+class Singleton { 
+  static let shared = Singleton() 
+  private init() {} 
+  
+  func printMessage(_ msg: String) { 
+    print(msg) } 
+  }
+```
+
+> 사용    
+> 클라이언트에서 .shared 변수를 불러와 사용
+
+``` swift
+  Singleton.shared.printMesage()
+```
+
+
