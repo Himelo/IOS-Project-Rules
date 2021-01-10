@@ -206,3 +206,36 @@ class Singleton {
 ```
 
 
+## High Order Function   
+
+### Map   
+Map 함수는 컨테이너가 담고 있던 각각의 값을 매개변수를 통해 받은 함수에 적용한 후 새로운 컨테이너를 생성하여 반환합니다 (기존 컨테이너의 값은 변경되지 않고!)
+시퀀스(Sequence), 콜렉션(Collection) 프로토콜을 따르는 타입과 옵셔널은 모두 맵을 사용할 수 있고. (배열, 딕셔너리, 세트, 옵셔널)
+for-in 구문 사용하는것과 비슷하나 코드가 더 간결하고 컴파일러 차원에서 성능 차이가 있으므로, 가능한 사용하는 것을 권장하지만   
+복잡한 Closure 사용은 오히려 코드를 읽는데 더 방해되니까 적당히 알아서..
+
+```swift
+// In Array
+    let array = [0, 1, 2, 3]
+    let newArray = array.map { $0 * 5 }
+    print(newArray) //[0, 5, 10, 15]
+  
+// In Dictionary
+    let dictionary = ["key1":"value1", "key2":"value2"]
+    let keys = dictionary.map { $0.0 }
+    let values = dictionary.map { $0.1 }
+
+    print(keys) //["key1", "key2"]
+    print(values) //["value1", "value2"]
+
+    let keys2 = dictionary.map { $0.0 + "a" }
+    let values2 = dictionary.map { $0.1 + "b" }
+
+    print(keys2) //["key1a", "key2a"]
+    print(values2) //["value1b", "value2b"]
+```
+## Filter
+## Reduce
+## FlatMap
+
+
